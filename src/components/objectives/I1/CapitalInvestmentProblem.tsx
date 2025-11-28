@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import { Card, CardHeader, CardTitle, CardContent, CardFooter } from '../../common/Card';
 import { Button } from '../../common/Button';
 import { MathRenderer } from '../../math/MathRenderer';
-import { ProgressBar } from '../../feedback/ProgressBar';
+
 import { useStore } from '../../../store/useStore';
 import { motion } from 'framer-motion';
 
 export const CapitalInvestmentProblem: React.FC = () => {
     const { addXP } = useStore();
-    const [step, setStep] = useState(0);
+
     const [showSolution, setShowSolution] = useState(false);
 
     // Problem constants

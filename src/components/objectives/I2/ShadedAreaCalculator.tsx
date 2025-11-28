@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Card, CardHeader, CardTitle, CardContent } from '../../common/Card';
 import { MathRenderer } from '../../math/MathRenderer';
 
@@ -7,12 +7,10 @@ export const ShadedAreaCalculator: React.FC = () => {
     // Or circle inscribed in square.
     // Let's use the "Square minus 4 quarter circles" (which equals Square minus 1 full circle)
 
-    const side = 8;
-    const radius = 4;
 
-    const squareArea = side * side;
-    const circleArea = Math.PI * radius * radius;
-    const shadedArea = squareArea - circleArea;
+
+
+
 
     return (
         <Card className="max-w-3xl mx-auto mt-8">

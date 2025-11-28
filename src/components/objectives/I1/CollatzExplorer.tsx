@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 export const CollatzExplorer: React.FC = () => {
     const [input, setInput] = useState<string>('7');
     const [sequence, setSequence] = useState<number[]>([]);
-    const [isPlaying, setIsPlaying] = useState(false);
+
 
     const handleSimulate = () => {
         const num = parseInt(input);
@@ -15,7 +15,7 @@ export const CollatzExplorer: React.FC = () => {
 
         const seq = getCollatzSequence(num);
         setSequence(seq);
-        setIsPlaying(true);
+
     };
 
     return (

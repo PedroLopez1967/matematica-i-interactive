@@ -1,6 +1,6 @@
 import React from 'react';
-import { useScenario, ScenarioTheme } from './ScenarioManager';
-import { Button } from '../common/Button';
+import { useScenario, type ScenarioTheme } from './ScenarioManager';
+
 import { Lock, Check } from 'lucide-react';
 import { motion } from 'framer-motion';
 
